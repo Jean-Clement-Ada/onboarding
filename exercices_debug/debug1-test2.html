@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<body> 
+<!-- "balise" body -->
+
+  <h1>Sum</h1>
+
+  <p id="sumOperation">-- Operation description --</p>
+  <p id="sumResult">-- Operation result --</p>
+<!-- id est l’attribue de <p> -->
+
+  <script>
+
+    // Return the sum of the two parameters
+    function sum(a, b) {                            //la fonction qu’on choisit d’appeler sum avec paramètre (a, b)
+	      return a + b;
+    }
+
+    const a = 2;                                    //variable (mutable / non mutable) avec valeur a
+    console.log(typeof(a))
+
+    const b = 4;
+    console.log(typeof(b))
+
+    console.log(a + " + " + b)
+
+    const sumAPlusB = sum(a, b);
+    
+    console.log("= " + sumAPlusB)
+    console.log("= " + sum(a, b))
+
+    // Show result on the html page
+    document.getElementById('sumOperation').innerText = a + " + " + b + " ="
+    document.getElementById('sumResult').innerText = sumAPlusB
+
+    console.log(sumAPlusB);
+
+  </script>
+</body>
